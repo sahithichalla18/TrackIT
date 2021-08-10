@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+		#myform{
+			margin-left:400px;
+			margin-right:400px;
+			border:2px solid green;
+			border-radius:7px;
+		}
+		.col{
+		padding:10px;
+		}
+		.form-label{
+		 padding:25px;
+		 font-size: 18px;
+		}
+		.form-control{
+		  width:150px;
+		  height:18px;
+		}
+		.form-select{
+		padding:3px;
+		width:180px;
+		height:22px;
+		}
+		button{
+		  padding:5px;
+		  border-radius:4px;
+		  color:white;
+		  background:green;
+		  cursor:pointer;
+		}
+    </style>
+</head>
+<body>
+<center>
+<h2 style="color:green;">Sign Up To Proceed</h2>
+<form id="myform" method = "post" action = "register.php"><br>
+  <div class="col">
+    <label for="firstname" class="form-label">FirstName</label>&nbsp
+    <input type="text" class="form-control" id="firstname" name="firstname" required>
+  </div>
+    <div class="col">
+    <label for="lastname" class="form-label">LastName</label>&nbsp &nbsp
+    <input type="text" class="form-control" id="lastname" name="lastname" required>
+  </div>
+    <div class="col">
+    <label for="rollno" class="form-label">Roll No</label>&nbsp &nbsp &nbsp &nbsp
+    <input type="text" class="form-control" id="rollno" name="rollno" required>
+  </div>
+  <div class="col">
+    <label for="pswd" class="form-label">Password</label> &nbsp &nbsp
+    <input type="password" class="form-control" id="pswd" name="pswd"  required>
+  </div>
+  <div class="col">
+    <label for="year" class="form-label">Year</label>&nbsp &nbsp &nbsp &nbsp &nbsp 
+    <select id="year" name="year" class="form-select"  required>
+      <option >Choose year</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+    </select>
+  </div>
+  <div class="col">
+    <label for="branch" class="form-label">Branch</label>
+    <select id="branch" name="branch" class="form-select" required>
+      <option >Choose Branch</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>IT</option>
+         <option>EEE</option>
+         <option>MECH</option>
+         <option>CIVIL</option>
+    </select>
+  </div>
+    <div class="col">
+    <label for="section" class="form-label">Section</label>
+    <select id="section" name="section" class="form-select">
+      <option >Choose Section</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+    </select>
+  </div>
+    <div class="col">
+    <label for="codechef" class="form-label">Codechef Username</label>&nbsp &nbsp &nbsp
+    <input type="text" class="form-control" id="codechef" name="codechef" required>
+  </div>
+    <div class="col">
+    <label for="interviewbit" class="form-label">InterviewBit Username</label>&nbsp
+    <input type="text" class="form-control" id="interviewbit" name="interviewbit" required>
+  </div>
+    <div class="col">
+    <label for="codeforces" class="form-label">Codeforces Username</label>&nbsp &nbsp
+    <input type="text" class="form-control" id="codeforces" name="codeforces" required>
+  </div>
+  </div>
+  <div class="btn">
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </div>
+  <br>
+</form>
+</center>
+</body>
+</html>
+
